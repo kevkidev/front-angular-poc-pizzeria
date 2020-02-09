@@ -1,0 +1,12 @@
+p {
+    font-family: monospace;
+}
+
+.button-submit {
+    background: none;
+    border: 1px solid;
+}
+
+.highlighted {
+    background-color: yellow;
+}

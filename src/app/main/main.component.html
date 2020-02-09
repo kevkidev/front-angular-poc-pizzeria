@@ -1,0 +1,14 @@
+<p>
+    Hello {{user}} !
+</p>
+<button class="button-submit" (click)="userClick()">Go</button>
+
+<img src="" src="assets/cat.jpeg">
+
+<div *ngFor="let element of elements; let i" [ngClass]="{highlighted: 0 == i % 2}">
+    Hello {{ element }} ({{i}})
+</div>
+
+<div [ngClass]="{highlighted: isHighlighted}">Directive</div>
+
+<div>{{date | date: "short"}}</div>
