@@ -1,0 +1,7 @@
+<h2>Les trains</h2>
+
+<ul class="list-group">
+    <li *ngFor="let train of trains; let i = index" class="list-group-item">
+        <app-train [train]="train"></app-train>
+    </li>
+</ul>

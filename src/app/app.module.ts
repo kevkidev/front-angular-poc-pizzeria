@@ -12,6 +12,9 @@ import { MainComponent } from './main/main.component';
 import { UserComponent } from './user/user.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TrainComponent } from './train/train.component';
+import { TrainsComponent } from './trains/trains.component';
+import { NavComponent } from './nav/nav.component';
+import { NavMenuComponent } from './nav-menu/nav-menu.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { TrainComponent } from './train/train.component';
     PizzasComponent,
     MainComponent,
     UserComponent,
-    TrainComponent
+    TrainComponent,
+    TrainsComponent,
+    NavComponent,
+    NavMenuComponent
   ],
   imports: [
     BrowserModule,
