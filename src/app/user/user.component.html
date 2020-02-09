@@ -7,3 +7,9 @@ Value : {{userInput}} <br />
 <input [formControl]="form1" />
 
 Value : {{form1.value}} <br />
+
+<form [formGroup]="userForm">
+    <input formControlName="name" />
+    <input formControlName="email" />
+    <button (click)="showForm()">OK</button>
+</form>
