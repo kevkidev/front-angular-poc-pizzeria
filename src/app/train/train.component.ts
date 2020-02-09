@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { timer, pipe } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-train',
@@ -17,6 +19,13 @@ export class TrainComponent implements OnInit {
       .subscribe(
         data => this.trainData = data
       )
+
+    // retourne un number toutes les 2s après 1s
+    timer(1000, 2000).pipe(
+      map(number => number + 1)
+    ).subscribe(
+      input => console.log(input)
+    )
   }
 
 }
