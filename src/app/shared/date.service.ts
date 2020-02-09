@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class DateService {
 
-  private date = new Date();
+  date = new Date();
 
   constructor() { }
 

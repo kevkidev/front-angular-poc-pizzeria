@@ -14,4 +14,7 @@ Value : {{form1.value}} <br />
     <button (click)="showForm()">OK</button>
 </form>
 
-{{dateService.date | date:'short'}}
+<!-- date fix -->
+Date (variable) {{dateService.date | date:'long'}}
+<!-- Date mis a jour -->
+Date (methode) {{dateService.getDate() | date:'long'}}
