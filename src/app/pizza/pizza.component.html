@@ -1,1 +1,13 @@
-{{pizza}}
+<div class="card h-100">
+    <a href="#"><img class="card-img-top" src={{imageUrl}} alt=""></a>
+    <div class="card-body">
+        <h4 class="card-title">
+            <a href="#">{{pizza.name | uppercase }}</a>
+        </h4>
+        <h5>{{pizza.price | currency:'EUR'}}</h5>
+        <p class="card-text">{{pizza.ingrediants}}</p>
+    </div>
+    <div class="card-footer">
+        <a (click)="onEatMe()" class="btn btn-success">Mangez moi !</a>
+    </div>
+</div>

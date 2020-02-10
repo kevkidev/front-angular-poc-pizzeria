@@ -1,5 +1,14 @@
-<mat-card>
-    <h2>{{pizza.name | uppercase }} Details</h2>
-    <div><span>id: </span>{{pizza.id}}</div>
-    <div><span>name: </span>{{pizza.name}}</div>
-</mat-card>
+<div class="row">
+    <div *ngIf="pizzas; then listPizzas; else noPizzas"></div>
+
+    <ng-template #listPizzas>
+        <div class="col-lg-4 col-md-6 mb-4" *ngFor="let pizza of pizzas">
+            <app-pizza [pizza]="pizza"></app-pizza>
+        </div>
+    </ng-template>
+
+    <ng-template #noPizzas>
+        <p>Pas de pizzas !</p>
+    </ng-template>
+
+</div>
