@@ -1,0 +1,11 @@
+<p>poc-rxjs works!</p>
+<button (click)="makeNewSubscribe()">Make a subscription</button>
+<p>{{subs.length}} subscriptions.</p>
+<button (click)="createObservable()">Run Create Observable</button>
+
+
+<input [(ngModel)]="index" type="number" min="0" [max]="max" />
+<button (click)="unsubscribeByOne()" [disabled]="!thereAreSubs">Remove subscriber {{index}}</button>
+
+
+<button (click)="piping()">Run piping</button>

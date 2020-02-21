@@ -1,0 +1,3 @@
+<h1>Se connecter ...</h1>
+<button class="btn btn-success my-2 my-sm-0" type="submit" *ngIf="!isAuth" (click)="onSignIn()">Entrer</button>
+<p *ngIf="isAuth">Vous êtes en ligne !</p>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -12,9 +14,12 @@ export class MainComponent implements OnInit {
   isHighlighted = true;
   date = new Date();
 
-  constructor() { }
+  constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit() {
+    // if (!this.authService.isAuth) {
+    //   this.router.navigate(['auth']);
+    // }
   }
 
   userClick() {

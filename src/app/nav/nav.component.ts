@@ -21,6 +21,7 @@ export class NavComponent implements OnInit {
       { path: "/pizzas", label: "Pizzas" },
       { path: "/pizzas/favories", label: "Favories" },
       { path: "/compte", label: "Compte" },
+      { path: "/rxjs", label: "RxJS" },
     ];
   }
 

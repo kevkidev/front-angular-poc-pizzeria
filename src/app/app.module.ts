@@ -15,6 +15,9 @@ import { TrainComponent } from './train/train.component';
 import { TrainsComponent } from './trains/trains.component';
 import { NavComponent } from './nav/nav.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { AuthComponent } from './auth/auth.component';
+import { AuthMenuComponent } from './auth-menu/auth-menu.component';
+import { PocRxjsComponent } from './poc-rxjs/poc-rxjs.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
     TrainComponent,
     TrainsComponent,
     NavComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    AuthComponent,
+    AuthMenuComponent,
+    PocRxjsComponent
   ],
   imports: [
     BrowserModule,
